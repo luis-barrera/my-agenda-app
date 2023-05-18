@@ -1,5 +1,5 @@
 <footer>
-    <div class="copyrights">
+    <div class="copyrights absolute bottom-0 right-0 left-0 text-center">
 
         <p>&copy; <?= date('Y') ?></p>
 
