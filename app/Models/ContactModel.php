@@ -8,6 +8,7 @@ class ContactModel extends Model
 {
   protected $table = 'contact';
   protected $primaryKey = 'idContact';
+  protected $allowedFields = ['idUser', 'name', 'surname1', 'surname2', 'tel', 'email'];
 
   public function getAllContactsByUser($userId)
   {

@@ -32,6 +32,7 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+$routes->post('agenda', [Agenda::class, 'create']);
 $routes->get('agenda', [Agenda::class, 'view']);
 $routes->get('/', [Pages::class, 'view']);
 $routes->get('(:segment)', [Pages::class, 'view']);
