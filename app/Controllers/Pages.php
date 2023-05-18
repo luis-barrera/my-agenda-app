@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use CodeIgniter\Exceptions\PageNotFoundException;
+use App\Models\ContactModel;
 
 class Pages extends BaseController
 {

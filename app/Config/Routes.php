@@ -3,6 +3,7 @@
 namespace Config;
 
 use App\Controllers\Pages;
+use App\Controllers\Agenda;
 
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
@@ -31,6 +32,7 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+$routes->get('agenda', [Agenda::class, 'view']);
 $routes->get('/', [Pages::class, 'view']);
 $routes->get('(:segment)', [Pages::class, 'view']);
 
